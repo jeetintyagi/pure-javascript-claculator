@@ -6,11 +6,11 @@ let logEntries = [];
 
 const addError = () => {
   userInput.classList.add("error");
-  warning.innerHTML("This field is required!");
+  // warning.innerHTML("This field is required!");
 };
 const removeError = () => {
   userInput.classList.remove("error");
-  warning.innerHTML("");
+  // warning.innerHTML("");
 };
 
 function success() {
