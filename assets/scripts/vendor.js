@@ -7,6 +7,8 @@ const multiplyBtn = document.getElementById("btn-multiply");
 const divideBtn = document.getElementById("btn-divide");
 const clearBtn = document.getElementById("btn-clear");
 
+const warning = document.getElementById("warning");
+
 const currentResultOutput = document.getElementById("current-result");
 const currentCalculationOutput = document.getElementById("current-calculation");
 
@@ -15,5 +17,3 @@ const outputResult = (result, text) => {
   currentResultOutput.textContent = result;
   currentCalculationOutput.textContent = text;
 };
-
-

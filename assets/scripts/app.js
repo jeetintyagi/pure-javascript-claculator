@@ -4,6 +4,31 @@ let calculationDescription = " ";
 // to keep track of user inputs for a session
 let logEntries = [];
 
+const addError = () => {
+  userInput.classList.add("error");
+  warning.innerHTML("This field is required!");
+};
+const removeError = () => {
+  userInput.classList.remove("error");
+  warning.innerHTML("");
+};
+
+function success() {
+  if (userInput.value === "") {
+    addBtn.disabled = true;
+    multiplyBtn.disabled = true;
+    subtractBtn.disabled = true;
+    divideBtn.disabled = true;
+    addError();
+  } else {
+    addBtn.disabled = false;
+    multiplyBtn.disabled = false;
+    subtractBtn.disabled = false;
+    divideBtn.disabled = false;
+    warning.innerHTML("");
+  }
+}
+
 const reset = () => {
   location.reload();
   localStorage.clear();

@@ -20,12 +20,15 @@
     </header>
 
     <section id="calculator">
-      <input type="number" id="input-number" />
+      <input type="number" id="input-number" onkeyup="success()" onchange="removeError()" />
+      <div>
+        <!-- <h3 placeholder="Warning" id="warning"></h3> -->
+      </div>
       <div id="calc-actions">
-        <button type="button" id="btn-add">+</button>
-        <button type="button" id="btn-subtract">-</button>
-        <button type="button" id="btn-multiply">*</button>
-        <button type="button" id="btn-divide">/</button>
+        <button type="button" id="btn-add" disabled>+</button>
+        <button type="button" id="btn-subtract" disabled>-</button>
+        <button type="button" id="btn-multiply" disabled>*</button>
+        <button type="button" id="btn-divide" disabled>/</button>
         <button type="button" id="btn-clear">CE</button>
       </div>
     </section>
