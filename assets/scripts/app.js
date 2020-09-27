@@ -6,11 +6,9 @@ let logEntries = [];
 
 const addError = () => {
   userInput.classList.add("error");
-  // warning.innerHTML("This field is required!");
 };
 const removeError = () => {
   userInput.classList.remove("error");
-  // warning.innerHTML("");
 };
 
 function success() {
@@ -25,7 +23,6 @@ function success() {
     multiplyBtn.disabled = false;
     subtractBtn.disabled = false;
     divideBtn.disabled = false;
-    warning.innerHTML("");
   }
 }
 
